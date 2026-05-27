@@ -12,8 +12,8 @@ MODELS=(
 # Edit the line below to switch flavors. Hardcoded (not env-driven) on
 # purpose — a stale TEST_FOLDER export in the user's shell otherwise
 # silently overrides this script's default.
-TEST_FOLDER="/home/tian.liu/IDA-VLM/prepare_dataset/06_annotated_abcd/benchmarks"
-# TEST_FOLDER="/home/tian.liu/IDA-VLM/prepare_dataset/06_annotated_abcd/benchmarks_hardnegatives"
+TEST_FOLDER="/home/xin.liang/code/VLM_gallery_creation/IDA-VLM/prepare_dataset/06_annotated_abcd/benchmarks"
+# TEST_FOLDER="/home/xin.liang/code/VLM_gallery_creation/IDA-VLM/prepare_dataset/06_annotated_abcd/benchmarks_hardnegatives"
 
 # .jsonl files carry the lettered-options format (prepared by
 # prepare_jsonl.py). eval_qwen.py auto-detects .jsonl vs .json.

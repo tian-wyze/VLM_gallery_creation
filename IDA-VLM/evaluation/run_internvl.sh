@@ -19,8 +19,8 @@ CAMERAS=(
 )
 
 declare -A DATA_FOLDER_MAP
-DATA_FOLDER_MAP["crossclothes"]="../../tian_data/wyze_person_v2/cross_clothes/"
-DATA_FOLDER_MAP["sameclothes"]="../../tian_data/wyze_person_v2/same_clothes/"
+DATA_FOLDER_MAP["crossclothes"]="/home/xin.liang/dataset/wyze_person_v2/cross_clothes/"
+DATA_FOLDER_MAP["sameclothes"]="/home/xin.liang/dataset/wyze_person_v2/same_clothes/"
 
 
 RESULTS_FILE="results_internvl.csv"

@@ -336,4 +336,4 @@ if __name__ == '__main__':
     }
     with open(sim_filename, 'w') as f:
         json.dump(sim_payload, f, indent=2)
-    print(f'Similarities saved to: {sim_filename}')
+    #print(f'Similarities saved to: {sim_filename}')

@@ -106,7 +106,9 @@ def run_evaluation():
                              'lettered-options format) or .json (legacy '
                              '{eval_cases: [...]} digit/-1 format).')
     parser.add_argument('--data_folder', type=str, required=False, default='', help='Path to the image data folder')
-    parser.add_argument('--project_id', type=str, default='ai-datascience-354723', help='GCP Project ID')
+    parser.add_argument('--project_id', type=str,
+                        default=os.environ.get('GOOGLE_CLOUD_PROJECT', 'fluted-bit-436622-f3'),
+                        help='GCP Project ID (defaults to $GOOGLE_CLOUD_PROJECT)')
     parser.add_argument('--location', type=str, default='us-central1', help='GCP Region')
     parser.add_argument('--model_name', type=str, default='gemini-2.5-flash-lite')
     parser.add_argument('--prompt_file', type=str, default='prompt.txt', help='Path to the prompt file')

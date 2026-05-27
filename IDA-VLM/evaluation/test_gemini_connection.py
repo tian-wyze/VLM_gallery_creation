@@ -1,11 +1,17 @@
+import os
+
 from google import genai
 from google.genai import types
 
+# Project resolved from env (set via `gcloud config set project ...` or
+# `export GOOGLE_CLOUD_PROJECT=...`); falls back to the old hard-coded default.
+PROJECT_ID = os.environ.get("GOOGLE_CLOUD_PROJECT", "fluted-bit-436622-f3")
+print(f"Using GCP Project: {PROJECT_ID}")
 # Initialize the client for Vertex AI
 # It will automatically use the VM's Service Account credentials
 client = genai.Client(
     vertexai=True,
-    project="ai-datascience-354723",  # Replace with your project ID
+    project=PROJECT_ID,
     location="global"      # Or your preferred region
 )
 
@@ -23,7 +29,7 @@ def test_connection():
 
 if __name__ == "__main__":
 
-    client = genai.Client(vertexai=True, project="ai-datascience-354723", location="us-central1")
+    client = genai.Client(vertexai=True, project=PROJECT_ID, location="us-central1")
 
     print("Available Gemini Models on Vertex AI:")
     for model in client.models.list():
