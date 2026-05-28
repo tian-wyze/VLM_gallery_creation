@@ -1,3 +1,0 @@
-[submodule "training/InternVL"]
-	path = training/InternVL
-	url = https://github.com/OpenGVLab/InternVL.git
