@@ -185,7 +185,8 @@ def main():
     parser.add_argument('--gemini_model_name', default='gemini-2.5-pro')
     parser.add_argument('--output_dir', default='results/poc_expertv04_to_gemini')
     parser.add_argument('--prompt_file', default='prompt.txt')
-    parser.add_argument('--project_id',  default='ai-datascience-354723')
+    parser.add_argument('--project_id',
+                        default=os.environ.get('GOOGLE_CLOUD_PROJECT', 'ai-datascience-354723'))
     parser.add_argument('--location',    default='us-central1')
     parser.add_argument('--limit', type=int, default=None,
                         help='Cap on cases (for fast smoke test). '

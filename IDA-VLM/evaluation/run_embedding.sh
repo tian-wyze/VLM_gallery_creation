@@ -1,15 +1,23 @@
 #!/bin/bash
 
+# Force torch to use its bundled cuBLAS (pip nvidia-cublas-cu12) instead of the
+# system /usr/local/cuda libcublasLt, which is ABI-mismatched and causes
+# "Invalid handle. Cannot load symbol cublasLtCreate".
+# NV_LIB_BASE=/usr/local/lib/python3.10/dist-packages/nvidia
+# if [[ -d "$NV_LIB_BASE/cublas/lib" ]]; then
+#     export LD_LIBRARY_PATH="$NV_LIB_BASE/cublas/lib:$NV_LIB_BASE/cuda_runtime/lib:$NV_LIB_BASE/cudnn/lib:$NV_LIB_BASE/cufft/lib:$NV_LIB_BASE/curand/lib:$NV_LIB_BASE/cusolver/lib:$NV_LIB_BASE/cusparse/lib:$NV_LIB_BASE/nvjitlink/lib:$LD_LIBRARY_PATH"
+# fi
+
 MODELS=(
-    # "DINOv2"
+    #"DINOv2"
     "WYZE_embedding"
-    # "PLIP"
+    #"PLIP"
 )
 WYZE_VARIANTS=(
-    # "50k"
+    #"50k"
     # "v02_02_reid"
-    # "v03_23_token"
-    "v04_15_token"
+     "v03_23_token"
+    #"v04_15_token"
 )
 
 # Benchmarks live under prepare_dataset/06_annotated_abcd/. Two flavors:
@@ -18,8 +26,8 @@ WYZE_VARIANTS=(
 # Edit the line below to switch flavors. Hardcoded (not env-driven) on
 # purpose — a stale TEST_FOLDER export in the user's shell otherwise
 # silently overrides this script's default.
-TEST_FOLDER="/home/tian.liu/IDA-VLM/prepare_dataset/06_annotated_abcd/benchmarks"
-# TEST_FOLDER="/home/tian.liu/IDA-VLM/prepare_dataset/06_annotated_abcd/benchmarks_hardnegatives"
+TEST_FOLDER="/home/xin.liang/code/VLM_gallery_creation/IDA-VLM/prepare_dataset/06_annotated_abcd/benchmarks"
+# TEST_FOLDER="/home/xin.liang/code/VLM_gallery_creation/IDA-VLM/prepare_dataset/06_annotated_abcd/benchmarks_hardnegatives"
 
 # .jsonl files carry the lettered-options format (prepared by
 # prepare_jsonl.py). eval_embedding.py auto-detects .jsonl vs .json.
@@ -41,7 +49,7 @@ TEST_FILES=(
 # matches (0.4–0.5 work well), DINOv2 is closer to 0.6.
 # Hardcoded (not env-driven) on purpose — a stale STRANGER_THRESHOLD export
 # in the user's shell otherwise silently overrides this script's value.
-STRANGER_THRESHOLD="0.8"
+STRANGER_THRESHOLD="0.0"
 echo "Using stranger threshold: $STRANGER_THRESHOLD"
 
 # Tag the results file with the benchmark folder so realistic vs.

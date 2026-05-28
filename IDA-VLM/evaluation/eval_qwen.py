@@ -66,7 +66,7 @@ def load_model(model_path):
     model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
         model_path,
         torch_dtype=torch.bfloat16,
-        attn_implementation="flash_attention_2",
+        attn_implementation="flash_attention_2",# (flash_attention_2,sdpa)
         device_map="auto",
     ).eval()
     processor = AutoProcessor.from_pretrained(model_path)
