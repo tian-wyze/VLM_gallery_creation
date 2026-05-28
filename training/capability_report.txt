@@ -1,0 +1,166 @@
+================================================================================
+IMAGE:     /home/tian.liu/IDA-VLM/training/examples/9991418_9996314_1_D03F278DB00F_D03F278DB00F131749415111_000000_005.jpg
+CONNECTOR: /home/tian.liu/IDA-VLM/training/runs/20260502_014222_annotated-distractor-sft-qwen7b-WYZEv04_15_token_Qwen2.5-VL-7B-Instruct_person_expert_wyzev0415token_expert_and_image_attn_lr_0.0002_bs_4_captions_False/ckpts/connector_best_step_38000.pt
+BASE:      Qwen/Qwen2.5-VL-7B-Instruct
+================================================================================
+
+--- Q1: Describe this image in detail. ---
+
+[base Qwen]
+The image shows a person standing next to a vehicle, which appears to be a truck or van. The individual is wearing a light-colored short-sleeved shirt and camouflage-patterned shorts. They have on white sneakers and appear to be holding something in their hands, possibly a tool or piece of equipment. The background includes the side of the vehicle, which has some visible wear and tear, including what looks like a dent or damage near the rear wheel well. The setting seems to be outdoors, possibly in a rural or industrial area, given the presence of the vehicle and the ground surface. The overall lighting suggests it might be daytime.
+
+[fine-tuned + expert (deployed)]
+The image shows an individual standing outdoors, likely at a campsite or a similar setting, as indicated by the presence of a vehicle and what appears to be camping equipment in the background. The person is wearing a light-colored, long-sleeved shirt with a patterned design on the sleeves, light blue shorts, and white sneakers. They have a red cap worn backwards and are holding a pair of black shoes in their hands. The individual's posture suggests they might be preparing for or finishing up a task related to the shoes. The background includes a vehicle with a beige exterior and a visible tire, along with some camping gear such as a tent or a similar structure. The overall environment looks casual and relaxed, typical of an outdoor recreational area.
+
+
+--- Q2: What is the person in the image doing? ---
+
+[base Qwen]
+The person in the image appears to be standing next to a vehicle, possibly a truck or van, and seems to be holding something in their hands that could be a tool or equipment. The exact activity is not clear from the image alone, but it looks like they might be preparing for some work or maintenance related to the vehicle.
+
+[fine-tuned + expert (deployed)]
+The person in the image appears to be standing next to a vehicle, possibly a truck or van, which has a large rearview mirror and a spare tire mounted on the back. The individual is wearing a white shirt, light-colored pants, and sneakers. They seem to be posing for the photo, as they are looking towards the camera with their arms crossed.
+
+
+--- Q3: What is the person wearing? ---
+
+[base Qwen]
+The person in the image is wearing a white short-sleeved shirt, camouflage-patterned shorts, and white sneakers. They also appear to be wearing a dark-colored cap or head covering.
+
+[fine-tuned + expert (deployed)]
+The person in the image is wearing a light-colored, long-sleeved shirt with a patterned design on the sleeves and a pair of light-colored, patterned shorts. They also have on white sneakers and appear to be wearing a watch on their left wrist.
+
+
+--- Q4: Is the person holding or smoking anything? Describe it. ---
+
+[base Qwen]
+The person in the image appears to be holding a cigarette in their right hand. The cigarette is partially visible, with the tip extending from between their fingers. There is no indication that they are actively smoking at the moment the photo was taken.
+
+[fine-tuned + expert (deployed)]
+The person in the image appears to be holding a cigarette in their right hand, which is extended towards the camera. The cigarette is partially visible and seems to be lit.
+
+
+--- Q5: Is the person wearing any accessories such as a watch or jewelry? ---
+
+[base Qwen]
+Yes, the person in the image appears to be wearing a watch on their left wrist.
+
+[fine-tuned + expert (deployed)]
+Yes, the person is wearing a watch on their left wrist and a bracelet on their right wrist.
+
+
+--- Q6: Is there a vehicle in the image? If so, describe it. ---
+
+[base Qwen]
+Yes, there is a vehicle in the image. It appears to be a light-colored SUV or minivan with a visible front tire and part of the front bumper. The vehicle is parked on what looks like a gravel surface.
+
+[fine-tuned + expert (deployed)]
+Yes, there is a vehicle in the image. It appears to be a car with a beige exterior and a black roof. The car has a visible front bumper and a license plate.
+
+
+--- Q7: What objects can you see in this image besides the person? ---
+
+[base Qwen]
+In addition to the person, the image shows a vehicle with a visible tire and part of its body. There also appears to be some equipment or gear attached to the vehicle, possibly for work or utility purposes. The ground is visible, suggesting an outdoor setting.
+
+[fine-tuned + expert (deployed)]
+In addition to the person, the image shows a vehicle with a visible tire and part of its body. There is also a red object that appears to be a bag or a piece of clothing hanging on the side of the vehicle. The background includes some natural elements like trees and possibly a fence.
+
+
+--- Q8: How many people are visible in this image? ---
+
+[base Qwen]
+There is one person visible in the image.
+
+[fine-tuned + expert (deployed)]
+There is one person visible in the image.
+
+
+--- Q9: Is the man wearing glasses? Answer yes or no. ---
+
+[base Qwen]
+No.
+
+[fine-tuned + expert (deployed)]
+No.
+
+
+--- Q10: Is the man smoking? Answer yes or no. ---
+
+[base Qwen]
+Yes.
+
+[fine-tuned + expert (deployed)]
+No.
+
+
+--- Q11: Is the man wearing a hat? Answer yes or no. ---
+
+[base Qwen]
+No.
+
+[fine-tuned + expert (deployed)]
+No.
+
+
+--- Q12: Is the man wearing a watch? Answer yes or no. ---
+
+[base Qwen]
+Yes.
+
+[fine-tuned + expert (deployed)]
+Yes.
+
+
+--- Q13: Is the man indoors or outdoors? ---
+
+[base Qwen]
+The man is outdoors. The background shows a vehicle and what appears to be an outdoor setting, such as a parking area or a driveway.
+
+[fine-tuned + expert (deployed)]
+The man is outdoors. The background includes a vehicle, which suggests an outdoor setting, possibly near a parking area or a roadside.
+
+
+--- Q14: What color is the man's t-shirt? ---
+
+[base Qwen]
+The man in the picture is wearing a white t-shirt.
+
+[fine-tuned + expert (deployed)]
+The man in the picture is wearing a white t-shirt.
+
+
+--- Q15: What color are the man's pants? ---
+
+[base Qwen]
+The man is wearing camouflage-patterned pants.
+
+[fine-tuned + expert (deployed)]
+The man is wearing light-colored pants, which appear to be a shade of light blue or gray.
+
+
+--- Q16: What color is the man's watch? ---
+
+[base Qwen]
+The man in the image appears to be wearing a black watch on his left wrist.
+
+[fine-tuned + expert (deployed)]
+The man in the picture is wearing a watch on his left wrist, which appears to be black.
+
+
+--- Q17: What is the man holding in his hand? ---
+
+[base Qwen]
+The man appears to be holding a pair of shoes in his hand.
+
+[fine-tuned + expert (deployed)]
+The man appears to be holding a pair of sunglasses in his right hand.
+
+
+--- Q18: What color is the car in the image? ---
+
+[base Qwen]
+The car in the image appears to be beige or light brown.
+
+[fine-tuned + expert (deployed)]
+The car in the image appears to be beige or light brown.
